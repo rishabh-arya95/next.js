@@ -1,0 +1,16 @@
+---
+framework: jest
+postMerge:
+  env:
+  pattern:
+    - 'test/unit/**/*.test.{js,ts,tsx}'
+preMerge:
+  pattern:
+    - 'test/unit/**/*.test.{js,ts,tsx}'
+preRun:
+  command:
+    - yarn install --immutable 
+postRun:
+  command:
+    - node --version
+version: 1.0
