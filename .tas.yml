@@ -1,7 +1,6 @@
 ---
 framework: jest
 postMerge:
-  env:
   pattern:
     - 'test/unit/**/*.test.{js,ts,tsx}'
 preMerge:
